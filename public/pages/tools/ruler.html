@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/highlight/github-dark.css">
+    <script src="/js/highlight/highlight.min.js"></script>
+    <script src="/js/tools/ruler.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');</style>
+
+    <title>Ruler SVG Generator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/tools/ruler.css">
+</head>
+    
+<body>
+    <div id="menu"></div>
+    <script>
+        async function loadMenu() {
+            const response = await fetch('/pages/shared/menu.html');
+            const content = await response.text();
+            document.getElementById("menu").innerHTML = content;
+        }
+        loadMenu();
+    </script>
+    <div class="header-container bg-grey">
+        <p class="text-header-green "><a href="/">Ruler Generator</a></p><br>
+    </div>
+    <div class="body-container text-normal bg-grey round-borders color-lgreen"><br>
+        <p><strong>Generate SVG with custom Ruler</strong></p><br>
+        <div class="content-block left-div">
+            <form id="ruler-form">
+                <label for="position">Rotation:</label>
+                <select id="position" name="position">            
+                    <option value="vertical">Vertical</option>
+                    <option value="horizontal">Horizontal</option>
+                </select>
+                <label for="length">Length (mm):</label>
+                <input type="number" id="length" name="length" min="1" max="20000" value="800">
+                <label for="text-size">CM mark text size (px):</label>
+                <input type="number" id="text-size" name="text-size" min="1" max="50" value="4">
+                <label for="mm-text-size">MM mark text size (px):</label>
+                <input type="number" id="mm-text-size" name="mm-text-size" min="1" max="50" value="1">
+                <label for="start-from">Start From:</label>
+                <select id="start-from" name="start-from">
+                    <option value="end">End</option>
+                    <option value="start">Start</option>
+                </select>
+                <label for="mm-distance">MM Mark Distance (px):</label>
+                <input type="number" id="mm-distance" name="mm-distance" min="1" max="50" value="8">
+                <label for="cm-distance">CM Mark Distance (px):</label>
+                <input type="number" id="cm-distance" name="cm-distance" min="1" max="50" value="9">
+                <button type="submit">Generate Ruler</button>
+            </form>
+            <button id="export-button" style="display:none;">Export SVG</button>
+        </div>
+        <div id="result" class="content-block right-div">
+            <p>Generated Ruler:</p>
+            <pre><code id="ruler-code" class="xml"></code></pre>
+            <div id="ruler-container">
+            </div>
+        </div>
+    </div>  
+</body>
+<script>
+    AttachEvents();            
+</script>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/highlight/github-dark.css">
+    <script src="/js/highlight/highlight.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script type="text/javascript" src="/js/local/preview.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>1337+</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<div id="menu"></div>
+    <script>
+        async function loadMenu() {
+            const response = await fetch('/pages/shared/menu.html');
+            const content = await response.text();
+            document.getElementById("menu").innerHTML = content;
+        }
+        loadMenu();
+    </script>
+<body>
+    <div class="header-container">
+        <p class="text-header-green"><a href="/">Кубач</a></p>
+        <div class="text-box">
+            <p class="text-h1-neon">Обожаю копать до изнеможения и красноты глаз, а под закат обмазаться модами</p>
+        </div>
+    </div>
+    <div class="body-container text-normal round-borders"><br>
+            <div class="content-block bg-grey color-lgreen">
+                <p class="text-h2 text-neon text-center">Сервер</p>
+                <b>Платформа</b> : Paper<br>
+                <b>Версия</b> : 1.21.1<br>
+                <b>Клиент</b> : Официальный, или нет<br>
+                <b>Коннект</b> : 1337.plus<br>
+                <b><a href="https://mc.1337.plus">Карта</a></b><br>
+                <br>
+                <div class="content-block half-width round-borders bg-green color-green center-div">
+                    <img src="/img/mc/map.jpg" class="round-borders img-center shadowbox" width="100%"><br>
+                </div>
+            </div>
+            <div class="content-block bg-lgrey color-bisque">
+                <p class="text-h2 text-neon text-center">Плагины</p>
+                <p class="text-bold">
+                    EssentialsX<br>
+                    EssentialsXAntiBuild<br>
+                    EssentialsXProtect<br>
+                    EssentialsXSpawn<br>
+                    LuckPerms<br>
+                    WorldEdit<br>
+                    WorldGuard<br>
+                    CommandBlocks<br>
+                    AuthMe<br>
+                    Vault<br>
+                    Bluemap<br>
+                    GriefPrevention<br>
+                </p>
+            </div>
+            <div class="content-block bg-lgrey color-bisque">
+                <p class="text-h2 text-neon text-center">Роли и команды</p>
+                <p class="text-normal">У игрока есть базовый трек по ролям - Default Track.<br> Внутри трека есть две роли: Default, Player.</p>
+                <div class="content-block bg-grey color-bisque">
+                    <h2><p class="text-neon">Default</p></h2>
+                    Эта роль выдаётся игроку по умолчанию при регистрации.<br>
+                    Игрок с ролью Default не может строить, ломать  блоки и т.д.<br><br>
+                    <p class="text-neon">Доступные команды:</p>
+                    <pre><code class="language-html round-borders">/register &lt;пароль&gt; &lt;пароль&gt; - регистрация
+/login &lt;пароль&gt; - вход
+/logout - выход
+/unregister &lt;пароль&gt; - удаление аккаунта
+/changepassword &lt;старый пароль&gt; &lt;новый пароль&gt; &lt;новый пароль&gt; - смена пароля
+/spawn - телепорт на спавн
+/warp - список точек телепорта
+/warp &lt;точка&gt; - телепорт на точку
+</code></pre>
+                </div>
+                <div class="content-block bg-grey color-bisque">
+                    <h2><p class="text-neon">Player</p></h2>
+                    <img width="500" src="/img/mc/start.jpg" class="shadowbox round-borders"><br>
+                    Чтобы получить роль Player достаточно просто кликнуть RMB на табличку.<br>
+
+                    Игрок с ролью Player может полностью использовать всю включенную для игрока функциональность.<br>
+                    Так же, роль Player включает в себя доступы роли Default<br><br>
+
+                    <p class="text-bold">Доступные команды:</p>
+                    <pre><code class="language-html round-borders">/info: Просмотр информации, установленной владельцем сервера.
+/motd: Просмотр сообщения дня.
+/tpdeny: Отклонение запросов на телепортацию.
+/suicide: Самоубийство.
+/pay <player> <сумма>: Оплата другому игроку из вашего баланса.
+/help [страница]: Просмотр списка доступных команд.
+/ignore <player>: Игнорирование или отмена игнорирования других игроков.
+/clearinventory: Очистка всех предметов в вашем инвентаре.
+/worth <item> [количество]: Расчет стоимости предметов в руке или указанных.
+/msg <player> <сообщение>: Отправка личного сообщения указанному игроку.
+/back: Телепортация на ваше местоположение перед tp/spawn/warp.
+/sethome: Установка вашего дома в текущем месте.
+/renamehome <старое имя> <новое имя>: Переименование дома.
+/rules: Просмотр правил сервера.
+/balancetop: Получение лучших значений баланса.
+/afk [сообщение]: Отмечает вас как отсутствующего от клавиатуры.
+/tpa <player>: Запрос на телепортацию к указанному игроку.
+/getpos [player]: Получение ваших текущих координат или координат игрока.
+/balance <player>: Указание текущего баланса игрока.
+/time [время]: Отображение/изменение времени в мире. По умолчанию используется текущий мир.
+/list: Список всех онлайн-игроков.
+/tpaccept <player>: Принятие запросов на телепортацию.
+/home: Телепортация к вашему дому.
+/warp [точка]: Список всех варпов или варп на указанное место.
+/tpahere <player>: Запрос на телепортацию указанного игрока к вам.
+/me <действие>: Описание действия в контексте игрока.
+/compass: Описание вашего текущего направления.
+/kit [комплект]: Получение указанного комплекта или просмотр всех доступных комплектов.
+/warpinfo <точка>: Поиск информации о местоположении для указанного варпа.
+/sell <количество>: Продажа предмета, который в настоящее время находится в вашей руке.
+/near [радиус]: Список игроков рядом с вами или вокруг игрока.
+/depth: Указание текущей глубины относительно уровня моря.
+/ping: Пинг!
+/itemdb <название/часть названия>: Поиск предмета.
+/nick <ник>: Изменение вашего ника или ника другого игрока.
+/spawn: Телепортация на точку спавна.
+                    </code></pre>
+                </div>
+            </div>
+
+            <div class="content-block bg-lgrey color-bisque">
+                <p class="text-h2 text-neon text-center">Антигрифинг и Приватная территория</p>
+                <div class="content-block bg-grey round-borders">
+                    <p class="text-h2 text-neon">Создание приватного участка</p>
+                Для создания своей территории (приватный участок) достаточно поставить сундук на свобдной территории<br>
+                Так же, создать приватный участок можно держа в руках Золотую Лопату и кликнув по углам, после чего в чате появится подсказка <br><br>
+                <pre><code class="language-html round-borders">/claim - создание приватного участка
+/unclaim - удаление приватного участка
+                </code></pre>
+                Ресурсы для лопаты можно купить в админ магазине на /spawn<br>
+                Так же, при использовании лопаты визуально видны границы вашего участка<br><br>
+                <img width="500" src="/img/mc/protect/1.jpg" class="shadowbox round-borders">
+                <br>
+                <br>
+                <p class="text-h2 text-neon">Расширение участка</p>
+                На старте игроку выдается 1000 блоков для привата<br>
+                Количество блоков для привата увеличивается со временем игры<br><br>
+                Для расширения участка нужно взять в руку Золотую Лопату, встать на свой участок и использовать команду /expandclaim<br>
+                <pre><code class="language-html round-borders">/expandclaim &lt;количество&gt; &lt;направление&gt; - расширение участка
+/expandclaim 100 west - Для расширения участка на 100 блоков на запад
+                </code></pre>
+                Направление можно посмотреть нажав F3 или на <a href="map.1337.plus">карте</a><br>
+                Там же на <a href="map.1337.plus">карте</a> можно увидеть границы своего участка<br>
+                <p class="text-h2 text-neon text-center">Все доступные команды:</p>
+                <div class="content-block bg-grey round-borders">
+                    <pre><code class="language-html round-borders">/AbandonClaim - удаление приватного участка
+/ClaimExplosions - разрешение взрывов на вашем участке
+/Trust /t <игрок> - добавление игрока в список доверенных
+/UnTrust /ut <игрок> - удаление игрока из списка доверенных
+/AccessTrust /at <игрок> - добавление игрока в список доступа
+/ContainerTrust /ct <игрок> - добавление игрока в список доступа к сундукам
+/TrustList - список доверенных игроков
+/SubdivideClaims /sc - разделение участка на подучастки
+/RestrictSubclaim /rs - ограничение доступа к подучастку
+/BasicClaims - включение/выключение базовых приватов
+/PermissionTrust /pt <игрок> - добавление игрока в список доступа к командам
+/Untrust All - удаление всех доверенных игроков
+/AbandonAllClaims - удаление всех приватных участков
+/BuyClaimBlocks <количество> - покупка блоков для привата
+/SellClaimBlocks <количество> - продажа блоков для привата
+/GivePet <игрок> - передача питомца
+/SellClaimBlocks <количество> - продажа блоков для привата
+/ClaimsList - список приватных участков
+/GivePet - передача питомца
+/IgnorePlayer и /UnIgnorePlayer <игрок> - игнорирование игрока
+/IgnoredPlayerList	- список игнорируемых игроков
+/Siege - начать осаду
+/Trapped - освобождение от ловушки
+/UnlockDrops - разблокировка дропа
+            </code></pre>
+                </div>
+            </div>
+        </div>
+<div class="content-block bg-lgrey color-bisque">
+                <p class="text-h2 text-neon text-center">Навыки и прокачка</p>
+                <div class="content-block bg-grey color-bisque">
+                    <p class="text-neon">На сервере включен плагин AuraSkills.<br>
+                    <img width="500" src="/img/mc/skills/1.jpg" class="shadowbox round-borders"><br>
+                    </p>
+                        Плагин позволяет игрокам прокачивать свои навыки и умения.<br>
+                        Прокачка навыков происходит за счет опыта, который игрок получает за выполнение различных действий.<br>
+                        Все навыки и умения можно посмотреть в меню навыков, которое открывается командой /skill<br>
+                    </p>
+                    <img width="500" src="/img/mc/skills/2.jpg" class="shadowbox round-borders"><br>
+                    <p class="text-h2">Доступные команды:</p>
+                    <pre><code class="language-html round-borders">/skill - открытие меню навыков
+/skill &lt;claimitems&gt; - собрать все предметы
+/skill &lt;help&gt; - помощь по навыкам
+/skill &lt;lang&gt; &lt;ru&gt; - выбор языка
+/skill &lt;rank&gt; - просмотр уровня навыков
+/skill sources &lt;навык&gt; - просмотр источников опыта, например /skill sources agility
+/archery - просмотр панели навыков стрельбы из лука
+/agility - просмотр панели навыков ловкости
+/alchemy - просмотр панели навыков алхимии
+/defense - просмотр панели навыков защиты
+/excavation - просмотр панели навыков копания
+/enchanting - просмотр панели навыков зачарования
+/farming - просмотр панели навыков фермерства
+/fishing - просмотр панели навыков рыбалки
+/fighting - просмотр панели навыков б
+/foraging - просмотр панели навыков сбора
+/mining - просмотр панели навыков горного дела
+
+/stats - просмотр статистики
+/abtoggle - включение/выключение ActionBar
+/skilltop &lt;навык&gt; - просмотр топа по навыку
+/skilltop - просмотр топа по всем навыкам
+/mana - просмотр маны
+                        </code></pre><br>
+                </div>
+</div>
+<div class="content-block bg-lgrey color-bisque">
+    <p class="text-h2 text-neon text-center">Статистика инструментов</p>
+    <div class="content-block bg-grey color-bisque">
+        <p class="text-neon">На сервере включен плагин показывающий характеристику и статистику ваших предметов.<br></p>
+        Плагин позволяет игрокам просматривать статистику инструментов, брони и оружия.<br><br>
+        <img width="300" src="/img/mc/stats/2.jpg" class="shadowbox round-borders"><br>
+        <img width="300" src="/img/mc/stats/1.jpg" class="shadowbox round-borders"><br>
+    </div>
+</div>       
+            <div class="content-block bg-lgrey color-bisque">
+                <p class="text-h2 text-neon text-center">Таблички</p>
+                <div class="content-block bg-grey color-bisque">
+                    <p class="text-normal">На сервере включены таблички, которые позволяют игрокам пользоваться различными командами.<br>
+                        Все таблички после создания используются через правую кнопку мыши.</p>
+                    <p class="text-h2">Доступные таблички:</p>
+                    <p class="text-h2 text-neon">Trade</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку торговать своим товаром с другими игроками
+Строка 1: [Trade]
+Строка 2: Что вы хотите
+Строка 3: Что вы предлагаете
+Строка 4: Если всё заполнено корректно, там отобразится ваш никнейм
+                    </code></pre>
+
+                    <img width="200" src="/img/mc/signs/trade/1.jpg">
+                    <img width="200" src="/img/mc/signs/trade/2.jpg">
+                    <img width="200" src="/img/mc/signs/trade/3.jpg">
+                    <img width="200" src="/img/mc/signs/trade/4.jpg">
+                    <img width="200" src="/img/mc/signs/trade/5.jpg">
+                    <img width="200" src="/img/mc/signs/trade/6.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Buy</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку покупать товар в админ магазине
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+
+                    <img width="200" src="/img/mc/signs/buy/1.jpg">
+                    <img width="200" src="/img/mc/signs/buy/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Sell</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку продавать товар в админ магазине
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+
+                    <img width="200" src="/img/mc/signs/sell/1.jpg">
+                    <img width="200" src="/img/mc/signs/sell/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Kit</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку получить/купить комплект предметов
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+
+                    <img width="200" src="/img/mc/signs/kit/1.jpg">
+                    <img width="200" src="/img/mc/signs/kit/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Balance</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку узнать свой баланс
+Строка 1: [Balance]
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/balance/1.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Disposal</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку выбросить предметы
+Строка 1: [Disposal]
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/disposal/1.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Heal</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку восстановить здоровье
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/heal/1.jpg">
+                    <img width="200" src="/img/mc/signs/heal/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Repair</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку починить предметы
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/repair/1.jpg">
+                    <img width="200" src="/img/mc/signs/repair/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Time</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку установить текущее время для всего сервера
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/time/1.jpg">
+                    <img width="200" src="/img/mc/signs/time/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Weather</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку установить текущую погоду для всего сервера
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/weather/1.jpg">
+                    <img width="200" src="/img/mc/signs/weather/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Warp</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку телепортироваться на точку
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/warp/1.jpg">
+                    <img width="200" src="/img/mc/signs/warp/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Free</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку получить неограниченное количество предметов бесплатно
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/free/1.jpg">
+                    <img width="200" src="/img/mc/signs/free/2.jpg">
+                    <br><br>
+                    <p class="text-h2 text-neon">Enchant</p>
+                    <pre><code class="language-html round-borders">Позволяет игроку зачаровать предмет в руке
+Такую табличку игрок может только использовать, но не создавать
+                    </code></pre>
+                    <img width="200" src="/img/mc/signs/enchant/1.jpg">
+                    <img width="200" src="/img/mc/signs/enchant/2.jpg">
+                    <br><br>
+                </div>
+            </div>
+    </div>
+    <div id="social-icons"></div>
+    <script>
+        async function loadSocialIcons() {
+            const response = await fetch('/pages/shared/socials.html');
+            const content = await response.text();
+            document.getElementById("social-icons").innerHTML = content;
+        }
+        loadSocialIcons();
+    </script>
+</body>
+</html>

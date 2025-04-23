@@ -1,2 +1,2 @@
-# killingspree.ru
-Killingspree.ru Website repository
+# 1337.plus
+

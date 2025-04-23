@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/404.css">
+    <title>404</title>
+</head>
+<body>
+    <a href="/"><img class="img-bottom" src="/img/404.png" alt="404"></a>
+    <div id="social-icons"></div>
+    <script>
+        async function loadSocialIcons() {
+            const response = await fetch('/pages/shared/socials.html');
+            const content = await response.text();
+            document.getElementById("social-icons").innerHTML = content;
+        }
+        loadSocialIcons();
+    </script>
+</body>
+</html>

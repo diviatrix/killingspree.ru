@@ -1,0 +1,414 @@
+body {
+	background-color: #333; /* Dark grey background */
+	margin: 0; /* Remove default margin */
+}
+.text-header-green {
+	font-family: "Advent Pro", sans-serif;
+	font-size: 50px;
+	color: #fff;
+	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #39ff14, 0 0 82px #39ff14, 0 0 92px #39ff14, 0 0 102px #39ff14, 0 0 151px #39ff14;
+	font-weight: 500;
+	font-style: normal;
+	text-align: left; /* Align text to the left */
+	font-variation-settings: "wdth" 100;
+	padding: 20px; /* Add some padding for spacing */
+}
+
+.text-normal-neon {
+	font-family: "Advent Pro", sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #39ff14, 0 0 82px #39ff14, 0 0 92px #39ff14, 0 0 102px #39ff14, 0 0 151px #39ff14;
+	font-weight: 200;
+	font-style: normal;
+	text-align: left; /* Align text to the left */
+	font-variation-settings: "wdth" 100;
+    padding-left: 5pt;
+    padding-right: 5pt;
+}
+
+.text-h1-neon {
+	font-family: "Advent Pro", sans-serif;
+	font-size: 32px;
+	color: #fff;
+	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #39ff14, 0 0 82px #39ff14, 0 0 92px #39ff14, 0 0 102px #39ff14, 0 0 151px #39ff14;
+	font-weight: 200;
+	font-style: normal;
+	text-align: left; /* Align text to the left */
+	font-variation-settings: "wdth" 100;
+    padding-left: 5pt;
+    padding-right: 5pt;
+}
+
+.text-neon {
+	font-family: "Advent Pro", sans-serif;
+	color: #fff;
+	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #39ff14, 0 0 82px #39ff14, 0 0 92px #39ff14, 0 0 102px #39ff14, 0 0 151px #39ff14;
+	font-weight: 200;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.text-bold {
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.text-h1 {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.text-h2 {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.round-borders {
+    border-radius: 10px; /* Rounded corners for the border */
+}
+
+.text-normal {
+	font-family: "Advent Pro", sans-serif;
+	font-size: 16px;
+	font-weight: 200;
+	font-style: normal;
+	text-align: left; /* Align text to the left */
+	font-variation-settings: "wdth" 100;
+}
+.icon-container {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	color: white;
+}
+
+.icon {
+	margin-right: 10px;
+	/* Adding neon green glow */
+	filter: drop-shadow(0 0 2px #008211)
+			drop-shadow(0 0 3px #00d1a0)
+			drop-shadow(0 0 4px #2fffb3)
+			drop-shadow(0 0 6px #70ffd2);
+}
+.header-container {
+	margin-top: 0pt;
+	display: flex;
+	align-items: center;
+}
+.body-container {
+	background-color: #9f9f9f; /* Light grey background */
+	/* border: 5px solid #39ff14; /* Fancy border */
+	box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Shadow effect */
+	margin: 10pt;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    margin: 0;
+    font-size: 22px;
+    padding: 3pt 0;
+}
+
+a {
+    font-style: normal;
+    text-decoration: unset;
+    cursor: crosshair;
+    color: white;
+}
+
+.header {
+    border: solid;
+    height: max-content;
+    border-radius: 10pt 20pt;
+    width: max-content;
+    padding: 5pt 20pt;
+    display: block;
+    margin: 10pt auto;
+    margin-top: 5%;
+}
+
+.vid {
+    margin: 0;
+    padding: 5;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.content-block {
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 10pt;
+    overflow-x: auto;
+}
+
+.content-block-2cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5pt;
+    margin: 5pt;
+    border-radius: 10pt;
+}
+
+
+.color-bisque {
+    color: bisque;
+}
+
+.color-grey {
+    color: #333333;
+}
+
+.color-lgrey {
+    color: #9f9f9f;
+}
+
+.color-green{
+    color: #45a049;
+}
+
+.color-lgreen{
+    color: #8bc34a;
+}
+
+.bg-bisque {
+    background: bisque;
+}
+
+.bg-grey {
+    background: #333333;
+}
+
+.bg-lgrey {
+    background: #666;
+}
+
+.bg-green{
+    background: #45a049;
+}
+
+.bg-lgreen{
+    background: #8bc34a;
+}
+
+[class*="bg-"] .menu-button {
+    background: inherit; /* Inherits the parent's background color */
+    border: none; /* Remove default button border */
+}
+
+.prettyprint {
+  overflow: auto; /* Ensure scrolling is possible */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.prettyprint::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.prettyprint {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+pre.prettyprint {
+  padding: 5px;
+  border: 1px solid #888;
+}
+  
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 5pt;
+    width: 100%;
+    top: 0;
+}
+
+.expandable {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+}
+.expandablecontent {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.expandedcontent {
+    max-height: 200px;
+}
+
+.menu-button {
+    padding: 5pt 10pt;
+    background: none;
+    font-size: 18px;
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.menu-button a {
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background: #45a049;
+    cursor: url('/img/cursor.png'), auto;
+}
+
+.menu-button:active {
+    background: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    cursor: url('/img/cursor2.png'), auto;
+}
+
+.menu-content-toright {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5pt;
+}
+
+.text {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;    
+}
+
+.font-neucha {
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-advent {
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.font-advent-bold {
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-right {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.img-overlay-right {
+    float: right;
+    margin: 0 0 15px 15px; /* Отступ слева и снизу */
+}
+
+
+.half-width {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.code {
+    background-color: lightgray;
+    border-radius: 10pt;
+    border: 2pt, dotted;
+    overflow: scroll;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #108d36;
+}
+
+.dropdown:hover .dropdown-content {
+    color: black;
+    background-color: #108d36;
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+

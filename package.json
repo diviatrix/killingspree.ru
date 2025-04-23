@@ -1,0 +1,17 @@
+{
+  "name": "killingspree.ru",
+  "version": "0.0.1",
+  "description": "Website",
+  "main": "1337web.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "1337.plus",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

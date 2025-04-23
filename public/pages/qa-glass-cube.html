@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/highlight/github-dark.css">
+    <script src="/js/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    <title>Тестовые задания на собеседование QA</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<div id="menu"></div>
+    <script>
+        async function loadMenu() {
+            const response = await fetch('/pages/shared/menu.html');
+            const content = await response.text();
+            document.getElementById("menu").innerHTML = content;
+        }
+        loadMenu();
+    </script>
+<body>
+    <div class="header-container">        
+        <p class="text-header-green"><a href="/">QA</a></p>
+        <div class="text-box"></div>
+        <p class="text-h1-neon">Тестовое задание - "Стеклянный Куб"</p>
+    </div>
+    <div class="body-container round-borders text-normal">
+    <div class="content-block">        
+        <p class="text-h1">  СТЕКЛЯННЫЙ КУБ</p>
+        <b>QA:</b> любая роль, задача на логику<br><br>
+        <b>ЦЕЛЬ ЗАДАНИЯ</b>
+        <div class="content-block bg-grey color-bisque round-borders">
+        <p>Оценить подход к решению логической задачи, включающей пространственное воображение и моделирование ситуации, подход к поиску решения.
+        <br>Для успешного выполнения соискателю обычно необходимо:</p>
+        <ul>
+            <li>Задать правильные вопросы по недостаточным данным</li>
+            <li>Найти корректное решение</li>
+        </ul>
+        </div>
+
+        <h4>ЗАДАНИЕ</h4>
+        <div class="content-block bg-green round-borders">
+        <p class="text-normal-neon">Представьте, что перед вами на столе стоит стеклянный куб. Так же перед вами киянка. 
+        <br>Ваша задача как тестировщика куба нанести ему максимальный урон киянкой с одного удара. Что будете делать?</p>
+        </div>
+
+        <h4>РЕШЕНИЕ</h4>
+        <div class="content-block bg-green round-borders expand">
+        <p class="text-normal-neon">Подсказка: куб стоит на столе, а не в воздухе. Попробуйте ударить по столу.</p>
+        </div>
+    </div>
+</body>
+
+<div id="social-icons"></div>
+    <script>
+        async function loadSocialIcons() {
+            const response = await fetch('/pages/shared/socials.html');
+            const content = await response.text();
+            document.getElementById("social-icons").innerHTML = content;
+        }
+        loadSocialIcons();
+    </script>
+</html>

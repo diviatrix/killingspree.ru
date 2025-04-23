@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/highlight/github-dark.css">
+    <script src="/js/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');</style>
+
+    <title>Тестовое задание для QA - "Базовые знания ООП</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<div id="menu"></div>
+<script>
+    async function loadMenu() {
+        const response = await fetch('/pages/shared/menu.html');
+        const content = await response.text();
+        document.getElementById("menu").innerHTML = content;
+    }
+    loadMenu();
+</script>
+<body>
+    <div class="header-container">        
+        <p class="text-header-green"><a href="/">QA</a></p>
+        <p class="text-h1-neon">Тестовое задание - "Базовые знания ООП"</p>
+    </div>
+    <div class="body-container text-normal round-borders">
+        <div class="content-block">
+        <p><strong>Преимущественно Manual QA, Trainee Automation QA</strong></p>
+
+        <h3>ЦЕЛЬ ЗАДАНИЯ</h3>
+        <div class="content-block bg-grey color-bisque round-borders">
+            <p>Оценить базовые структуры ООП, понимание передачи параметров и локальных/глобальных переменных.</p>
+        </div>
+        <h3>Задание</h3>
+        <pre><code class="language-csharp round-borders">
+int a = 0;
+int b = 1;
+int c = 2;
+int[] array = { 0, 1, 2 };
+
+void one(int a, int b, int c) 
+{
+    a = 1;
+    b = 2;
+    c = a + b;
+}
+
+void two(int[] _array) 
+{
+    _array[a] = c;
+    _array[b] = a;
+    _array[c] = b;
+}
+
+one(a, b, c);
+two(array);
+
+Console.WriteLine(array[0] + " " + array[1] + " " + array[2]);
+Console.WriteLine(a + " " + b + " " + c);    
+            </code></pre>
+
+        <div class="content-block bg-green round-borders">
+            <p class="text-normal-neon">Какой будет вывод в консоли?</p>
+        </div>     
+        <br>   
+    </div>
+    </div>
+    <div id="social-icons"></div>
+    <script>
+        async function loadSocialIcons() {
+            const response = await fetch('/pages/shared/socials.html');
+            const content = await response.text();
+            document.getElementById("social-icons").innerHTML = content;
+        }
+        loadSocialIcons();
+    </script>
+</body>
+</html>

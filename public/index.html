@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Killingspree.ru</title>
+</head>
+<body>
+    <div class="header-container">
+        <p class="text-header-green"><a href="/">Killingspree.ru</a></p>
+        <div class="text-box"></div>
+            <p class="text-h1-neon">IT News</p>
+        </div>
+    </div>
+    
+    <div id="menu"></div>
+    <script>
+        async function loadMenu() {
+            const response = await fetch('/pages/shared/menu.html');
+            const content = await response.text();
+            document.getElementById("menu").innerHTML = content;
+        }
+        loadMenu();
+    </script>
+   	
+    <div id="social-icons"></div>
+    <script>
+        async function loadSocialIcons() {
+            const response = await fetch('/pages/shared/socials.html');
+            const content = await response.text();
+            document.getElementById("social-icons").innerHTML = content;
+        }
+        loadSocialIcons();
+    </script>
+</body>
+    
