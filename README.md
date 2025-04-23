@@ -1,2 +1,2 @@
-# 1337.plus
+# Killingspree.ru
 
